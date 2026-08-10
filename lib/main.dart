@@ -13,12 +13,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-
-        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
-      ),
-      home:MyCartView() ,
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
+      home: MyCartView(),
     );
   }
 }
-
