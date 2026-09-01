@@ -10,6 +10,4 @@ class MyCartView extends StatelessWidget {
       body: MyCartViewBody(),
     );
   }
-
-  
 }

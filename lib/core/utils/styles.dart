@@ -41,8 +41,7 @@ abstract class Styles {
     height: 0,
   );
 
-
-   static const TextStyle style22 = TextStyle(
+  static const TextStyle style22 = TextStyle(
     color: Colors.black,
     fontSize: 22,
     fontFamily: 'Inter',

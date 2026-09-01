@@ -35,6 +35,11 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
   flutter_credit_card: ^4.1.0
+  font_awesome_flutter: ^11.0.0
+  flutter_stripe: ^14.0.0
+  dio: ^5.11.0
+  dartz: ^0.10.1
+  flutter_bloc: ^9.1.1
 
 dev_dependencies:
   flutter_test:
@@ -63,6 +68,7 @@ flutter:
      - assets/images/img.png
      - assets/images/card.png
      - assets/images/paypal_logo.png.png
+     - assets/images/mastercard.png.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

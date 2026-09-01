@@ -3,7 +3,8 @@ import 'package:payment_method_app/features/checkout/presentation/views/widgets/
 
 class MypaymentMethodListview extends StatefulWidget {
   @override
-  State<MypaymentMethodListview> createState() => _MypaymentMethodListviewState();
+  State<MypaymentMethodListview> createState() =>
+      _MypaymentMethodListviewState();
 }
 
 class _MypaymentMethodListviewState extends State<MypaymentMethodListview> {

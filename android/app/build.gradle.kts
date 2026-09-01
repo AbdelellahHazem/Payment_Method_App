@@ -5,6 +5,10 @@ plugins {
     id("dev.flutter.flutter-gradle-plugin")
 }
 
+dependencies {
+    implementation("androidx.appcompat:appcompat:1.7.0")
+}
+
 android {
     namespace = "com.example.payment_method_app"
     compileSdk = flutter.compileSdkVersion
@@ -28,6 +32,7 @@ android {
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+        
     }
 
     buildTypes {
@@ -42,3 +47,5 @@ android {
 flutter {
     source = "../.."
 }
+
+
