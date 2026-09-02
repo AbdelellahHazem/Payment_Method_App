@@ -2,8 +2,25 @@ import 'package:flutter/material.dart';
 import 'package:payment_method_app/features/checkout/presentation/views/widgets/custom_button_bloc_consumer.dart';
 import 'package:payment_method_app/features/checkout/presentation/views/widgets/payment_methods_listview.dart';
 
-class PaymentMethodsButtonSheet extends StatelessWidget {
+class PaymentMethodsButtonSheet extends StatefulWidget {
   const PaymentMethodsButtonSheet({super.key});
+
+  @override
+  State<PaymentMethodsButtonSheet> createState() =>
+      _PaymentMethodsButtonSheetState();
+}
+
+class _PaymentMethodsButtonSheetState extends State<PaymentMethodsButtonSheet> {
+  bool ispaypal = false;
+
+  updatePaymentMethod({required int index}) {
+    if (index == 0) {
+      ispaypal = false;
+    } else {
+      ispaypal = true;
+    }
+    setState(() {});
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -12,9 +29,9 @@ class PaymentMethodsButtonSheet extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          MypaymentMethodListview(),
+          MypaymentMethodListview(updatePaymentMethod: updatePaymentMethod),
           SizedBox(height: 30),
-          CustomButtonBlocConsumer(),
+          CustomButtonBlocConsumer(ispaypal: ispaypal),
         ],
       ),
     );

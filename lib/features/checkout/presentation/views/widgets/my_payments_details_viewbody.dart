@@ -20,7 +20,7 @@ class _MyPaymentsDetailsViewBodyState extends State<MyPaymentsDetailsViewBody> {
   Widget build(BuildContext context) {
     return CustomScrollView(
       slivers: [
-        SliverToBoxAdapter(child: MypaymentMethodListview()),
+        //   SliverToBoxAdapter(child: MypaymentMethodListview()),
         SliverToBoxAdapter(
           child: CustomCreditCard(
             formKey: formKey,
